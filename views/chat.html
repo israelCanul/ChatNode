@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta charset='UTF-8'>
 	<title>Sala de Chat</title>
 </head>
@@ -16,7 +17,15 @@
 	var socket=io();
 
 	socket.on('chat message', function (msg) {
-      $('#list-msgs').append( $('<li>').text(msg) );
+		$('#list-msgs').html("");
+	var mensages=msg;
+		if(mensages.length>0){
+			console.log("son mas de 0 : "+ mensages.length);
+			mensages.map(function(msj){
+				$('#list-msgs').append( $('<li>').text(msj.message) );			
+			});
+		}	
+      
     });
 
     $('#new-msg').keyup(function (evt) {
