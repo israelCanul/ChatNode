@@ -8,7 +8,7 @@ Servicio de chat que guarda los mensajes atraves de mongo db y un cliente que ac
 <br>-socket-io
 
 #URL
-*http://31.220.107.178:3000/chat
+*http://31.220.107.178:6100/chat
 
 <br>Autor: Israel Canul 
 <br>Fecha: 14/10/2015
