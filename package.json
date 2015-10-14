@@ -1,0 +1,25 @@
+{
+  "name": "chatnode",
+  "version": "1.0.0",
+  "description": "servidor de chat con mongo db y socket io",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israelCanul/ChatNode.git"
+  },
+  "author": "Israel Canul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/israelCanul/ChatNode/issues"
+  },
+  "homepage": "https://github.com/israelCanul/ChatNode#readme"
+}
